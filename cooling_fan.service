@@ -1,0 +1,17 @@
+[Unit]
+Description=Runs the cooling fan
+DefaultDependencies=no
+
+[Service]
+Type=simple
+ExecStart=python3 /home/daniel/cooling_fan.py
+WorkingDirectory=/home/daniel/
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=cooling_fan
+User=root
+Group=root
+
+[Install]
+WantedBy=sysinit.target

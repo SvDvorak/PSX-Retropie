@@ -1,0 +1,12 @@
+[Unit]
+Description=Boot splash screen
+DefaultDependencies=no
+After=local-fs.target
+
+[Service]
+ExecStart=/usr/bin/omxplayer -b -o hdmi /home/daniel/psx_boot.mkv
+StandardInput=tty
+StandardOutput=tty
+
+[Install]
+WantedBy=sysinit.target

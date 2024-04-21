@@ -1,0 +1,15 @@
+[Unit]
+Description=Quits game or shutdowns system when pressing Reset or Power
+
+[Service]
+ExecStart=python3 /home/daniel/psx_buttons.py
+WorkingDirectory=/home/daniel/
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=reset_game
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
