@@ -3,7 +3,7 @@
 
 For my brother's birthday I wanted to make something special. As the original Playstation is near to his heart I converted an old one to hold a Raspberry Pi, with completely functional controller ports, power & reset buttons, power LED and USB ports in the memory slots.
 
-This repository contains the scripts and Raspberry Pi configuration steps I used.
+This repository contains the scripts and Raspberry Pi configuration steps I used. See setup_instructions.txt for installing the scripts (among other things, these were my steps).
 
 DISCLAIMER: It was more than 5 years ago I wrote these scripts and the setup config. I leave no guarantees that they'll work for you.
 
